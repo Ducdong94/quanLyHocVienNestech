@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="container">
+    <h1>Registation Form</h1>
+    <form>
+        <div class="form-group">
+            <label>Avatar</label>
+            <input class="form-control" type="file" multiple>
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label>Username</label>
+            <input class="form-control" type="text">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label>Re-password</label>
+            <input class="form-control" type="password">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input class="form-control" type="number">
+        </div>
+        <div class="form-group">
+            <label>Birthday</label>
+            <input class="form-control" type="date">
+            <input class="form-control" type="month">
+            <input class="form-control" type="datetime-local">
+        </div>
+        <div class="form-group">
+            <label>Gender</label><br>
+            <input class="ml-4" type="radio" name="gender" value="nam"> Nam
+            <input class="ml-4" type="radio" name="gender" value="nu"> Nữ
+            <input class="ml-4" type="radio" name="gender" value="khongxacdinh"> Không xác định
+        </div>
+        <div class="form-group">
+            <label>Level</label><br>
+            <input class="ml-4" type="checkbox" name="level" value="internship"> InternShip
+            <input class="ml-4" type="checkbox" name="level" value="fresher"> Fresher
+            <input class="ml-4" type="checkbox" name="level" value="junior"> Junior
+            <input class="ml-4" type="checkbox" name="level" value="midder"> Midder
+            <input class="ml-4" type="checkbox" name="level" value="senior"> Senior
+        </div>
+        <div class="form-group">
+            <label>Country</label>
+            <select class="form-control">
+                <option value="vietnam">Viet Nam</option>
+                <option value="lao">Lao</option>
+                <option value="campuchia">Campuchia</option>
+                <option value="thailan">ThaiLan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <textarea class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-primary mt-2">Submit</button>
+        </div>
+
+    </form>
+    <script src="js/_form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sửa học viên</h2>
+        <form>
+            <div class="form-control">
+                <div class="mb-3">
+                    <label for="search" class="form-label fw-bold">Nhập tên hv cần sửa:</label>
+                    <input type="text" class="form-control" style="display: block;" placeholder="vui lòng nhập tên hv">
+                    <small id="search-err"></small>
+                </div>
+                <div class="mb-3">
+                    <button id="btn1" type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i>
+                        Search</button>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label fw-bold">Tên học viên:</label>
+                    <textarea class="form-control" rows="1" style="resize: none;" id="username"></textarea>
+                    <small class="text-danger" id="username-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label fw-bold">Nhập sđt:</label>
+                    <textarea class="form-control" rows="1" style="resize: none;" id="telephone"></textarea>
+                    <small class="text-danger" id="phone-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="add" class="form-label fw-bold">Nhập địa chỉ:</label>
+                    <textarea class="form-control" rows="4" style="resize: none;" id="add"></textarea>
+                    <small class="text-danger" id="add-err"></small>
+                </div>
+                <div class="mb-3">
+                    <button id="btn2" type="submit" class="btn btn-primary">Sửa</button>
+                    <a href="./index.html" class="btn btn-secondary">Hủy</a>
+                    <p id="form-err"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/js/_putApi.js"></script>
+
+</html

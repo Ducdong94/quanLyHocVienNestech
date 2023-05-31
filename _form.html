@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            background-color: rgb(235, 235, 247);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-control">
+                <div class="mb-3">
+                    <label for="username">Tên đăng nhập:</label><br>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                    <small class="text-danger" id="username-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Mật khẩu:</label><br>
+                    <input type="password" id="password" name="password" class="form-control" required autocomplete="new-password">
+                    <small class="text-danger" id="pwd-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="re-password">Nhập lại mật khẩu:</label><br>
+                    <input type="password" id="re-password" name="re-password" class="form-control" required autocomplete="new-password">
+                    <small class="text-danger" id="re-pwd-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="form-control" required autocomplete="username">
+                    <small class="text-danger" id="email-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="birthdate">Ngày sinh:</label><br>
+                    <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+                    <small class="text-danger" id="birthday-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="gender">Giới tính:</label><br>
+                    <select name="gender" id="gender" class="form-control" required>
+                        <option value="">--Chọn giới tính--</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+                    <small class="text-danger" id="gender-err"></small>
+                </div>
+                <div class="mb-4">
+                    <label>Level</label><br>
+                    <input class="ml-4" type="radio" name="level" value="internship"> InternShip
+                    <input class="ml-4" type="radio" name="level" value="fresher"> Fresher 
+                    <input class="ml-4" type="radio" name="level" value="junior"> Junior 
+                    <input class="ml-4" type="radio" name="level" value="midder"> Midder 
+                    <input class="ml-4" type="radio" name="level" value="senior"> Senior 
+                    <br>
+                    <small class="text-danger" id="level-err"></small>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/_form.js"></script>
+</html>

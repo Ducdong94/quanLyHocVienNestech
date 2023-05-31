@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm hv</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thêm học viên</h2>
+        <form>
+            <p id="form-err" class=""></p>
+            <div class="form-control">
+                <div class="mb-3">
+                    <label for="username" class="from-label fw-bold">Nhập tên hv</label>
+                    <input type="text" id="username" class="form-control" style="display: block;" placeholder="vui lòng nhập tên hv">
+                    <small class="text-danger" id="username-err"></small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telephone" class="from-label fw-bold">Nhập sđt</label>
+                    <input type="text" id="telephone" class="form-control" style="display: block;" placeholder="vui lòng nhập sđt hv">
+                    <small class="text-danger" id="telephone-err"></small>
+                </div>
+                <div class="mb-3">
+                    <label for="add" class="from-label fw-bold">Nhập địa chỉ</label><br>
+                    <textarea id="add" class="form-control" rows="4" style="resize: none;"></textarea>
+                    <small class="text-danger" id="add-err"></small>
+                </div>
+                <button class="btn btn-small btn-primary" type="submit">Thêm</button>
+                <a class="btn btn-small btn-secondary" href="./index.html">Hủy</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="/js/_manhApiPost.js"></script>
+</html>

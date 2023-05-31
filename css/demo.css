@@ -1,0 +1,127 @@
+/* Responsive */
+/* Tổ chức lại bố cục, kích thước các phần tử */
+
+/* Css grid system : màn hình được chia thành 12 cột*/
+.row {
+    width: 100%;
+    display: inline-flex;
+}
+
+.col {
+    width: 8.33%;
+    height: 30px;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+
+.col-10 {
+    width: 83.3% !important;
+    height: 30px;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+
+/* CSS cho màn desktop */
+@media screen and (min-width: 1280px) {
+
+    /* body {
+        background-color: blue;
+    } */
+    h1 {
+        font-size: 65px;
+        margin-bottom: 100px;
+    }
+
+    img {
+        width: 1000px;
+    }
+}
+
+/* CSS cho màn tablet */
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+
+    /* body {
+        background-color: red;
+    } */
+    h1 {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 800px;
+    }
+}
+
+/* CSS cho màn mobile */
+@media screen and (max-width: 601px) {
+
+    /* body {
+        background-color: yellow;
+    } */
+    h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .col {
+        width: 0px;
+    }
+}
+
+/* Đơn vị trong css */
+/* px: đơn vị fix cứng theo độ phân giải */
+/* %: là tỉ lệ với phần tử cha */
+/* pt: point, hay sd để thay đổi kích thước chữ */
+
+/* em: tỉ lệ so với font-size của phần tử */
+/* rem: tỉ lệ so với font-size của phần tử root (body)  */
+/* vw: tỉ lệ so với chiều ngang (width) của màn hình */
+/* vh: tỉ lệ so với chiều cao (height) của màn hình */
+
+.parent {
+    width: 1200px;
+    height: 60px;
+    background-color: rgb(0, 255, 26);
+}
+
+.child {
+    /* % là tỉ lệ với phần tử cha */
+    width: 50%;
+    height: 30px;
+    background-color: red;
+}
+
+/* h1{
+    font-size: 10pt;
+} */
+
+/* Html Entities (> = &gt; < = $lt; @) */
+/* Css Entities */
+/* h1:before {
+    content: ' \00AE';
+}
+h1:after {
+    content: ' \00AE';
+} */
+
+/* psedo-class */
+h1:first-child{
+
+}
+h1:last-child{
+    
+}
+
+.form-group label{
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}

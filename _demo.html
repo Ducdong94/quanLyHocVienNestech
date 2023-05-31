@@ -1,0 +1,198 @@
+<!-- SHIFT + 1 => Sau đó chọn !: Tạo cấu trúc HTML -->
+<!-- HTML (Hyper Text Markup Language) là gì? -->
+<!-- HTML5/CSS3 -->
+<!DOCTYPE html><!-- Khai báo phiên bản HTML -->
+<html lang="en"> <!-- bắt đầu tài liệu html -->
+
+<head> <!-- css, js, tiêu để và các nội dung mô tả trang web-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Xây dựng giao diện web</title>
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div>
+        <p>Thẻ đoạn văn
+            <span>có chứa thẻ span</span>
+        </p>
+        <span>Đây là thẻ span</span>
+    </div>
+    <p id="tenId">Css selector theo id 1</p>
+    <p class="tenClass">Css selector theo class 1</p>
+    <p class="tenClass">Css selector theo class 2</p>
+    <p class="tenClass">Css selector theo class 3</p>
+    <p class="ketHopVoiClass">Css selector tag kết hợp với class</p>
+    <span id="ketHopVoiId">Css selector tag kết hợp với id</span>
+    <p class="class1" id="id1">Css selector id kết hợp với class</p>
+    <p class="orveright">orveright css</p>
+    <!-- Một số thẻ(tag) hay dùng -->
+    <!-- XỬ LÝ ĐOẠN VĂN BẢN -->
+    <!-- Thẻ tiêu đề (h1-h6) -->
+    <h1>
+        <!-- Thẻ tạo liên kết (href, target) -->
+        <a target="_blank"
+            href="https://vnexpress.net/phuong-tay-lung-tung-voi-300-ty-usd-bi-dong-bang-cua-nga-4592447.html">Phương
+            Tây lúng túng với 300 tỷ USD bị đóng băng của Nga</a>
+    </h1>
+    <!-- <h2>
+    Phương Tây lúng túng với 300 tỷ USD bị đóng băng của Nga
+</h2>
+<h6>
+    Phương Tây lúng túng với 300 tỷ USD bị đóng băng của Nga
+</h6> -->
+    <!-- Thẻ đoạn văn (p)(paragraph) -->
+    <!-- Thẻ xuống dòng (br) - không cần thẻ đóng -->
+    <!-- Thẻ tô đậm (b)(bold)-->
+    <!-- Thẻ in nghiêng (em)(emphasis) (i)(italic)-->
+    <!-- Thẻ gạch chân (u)(underline)-->
+    <p><em>Nhiều</em> <u>người</u> cho rằng phương Tây nên dùng khối tài sản bị phong tỏa của Nga để hỗ trợ
+        <b>Ukraine</b>,<br>
+        song điều này đi kèm thách thức pháp lý rất lớn.
+    </p>
+    <!-- Thẻ chữ nhỏ (small)-->
+    <small>Chữ nhỏ</small>
+    <!-- Thẻ chữ to (big)-->
+    <big>Chữ to</big>
+    <!-- Thẻ chữ nhỏ (small)-->
+    <i>Chữ in nghiêng</i>
+    <!-- Thẻ Super (sup) -->
+    <p>x<sup>2</sup></p>
+    <!-- Thẻ Sub -->
+    <p>x<sub>2</sub></p>
+    <!-- HTML Entities -->
+    <p> 4 &lt; 5 & 7 &gt; 6</p>
+
+
+    <!-- Thẻ đường kẻ ngang (hr)(horizontal) -->
+    <hr width="50%" align="center" size="55%" noshade="" style="border: 1px solid red;background-color:  green;">
+    <!-- Thẻ danh sách có sắp xếp (ol)(ordrer list) (123,..) -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Thẻ danh sách không sắp xếp (ul)(unorderlist)-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- XỬ LÝ HÌNH ẢNH, ĂM THANH, VIDEO -->
+    <img width="100%" src="img/bg-1.jpg" alt="Đang load ảnh">
+    <!-- <img src="https://i1-thethao.vnecdn.net/2023/04/17/rafaelson-jpeg-4237-1681735896.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=i-enVCQQ17PCtGYE7i5EMw"> -->
+
+    <audio controls>
+        <source src="audio/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <video width="100%" controls>
+        <source src="video/video.mp4" type="video/mp4">
+        <!-- <source src="https://cdn.pixabay.com/vimeo/255658030/con-song-14205.mp4?width=640&expiry=1681738433&hash=d13ce88df71da3cedde979fc0aacbda8d1cf4a4b" type="video/mp4"> -->
+
+    </video>
+    <!-- XỬ LÝ BẢNG -->
+    <table border="1" width="100%">
+        <thead>
+            <!-- Tiêu đề bảng -->
+            <tr> <!-- tr = table row -->
+                <th>Tiêu đề 1</th> <!-- th = table header -->
+                <th colspan="2">Tiêu đề 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Nội dung  bảng -->
+            <tr>
+                <td rowspan="2">Nội dung 1</td> <!-- td = table data -->
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+            <tr>
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+            <tr>
+                <td>Nội dung 1</td> <!-- td = table data -->
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+            <tr>
+                <td>Nội dung 1</td> <!-- td = table data -->
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- XỬ LÝ FORM -->
+    <form action="POST" part="/save">
+        <fieldset>
+            <legend>Thông tin chung</legend>
+            <label>Tên học viên</label>
+            <input type="text" value="Dong" placeholder="Vui lòng nhập tên học viên"><br>
+            <label>Tuổi học viên</label>
+            <input type="number" value="30" placeholder="Vui lòng nhập tuổi học viên"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin liên hệ</legend>
+            <label>Địa chỉ</label>
+            <textarea rows="10" cols="100" style="resize: none;"> </textarea><br>
+        </fieldset>
+        <input type="password" value="Dong" placeholder="Vui lòng nhập tên học viên"> <i
+            class="fa-solid fa-eye-slash"></i><br>
+        <input type="checkbox" name="check" checked> Lựa chọn 1<br>
+        <input type="checkbox" name="check" checked> Lựa chọn 2<br>
+
+        <input type="radio" value="val1" name="check"> Lựa chọn 1<br>
+        <input type="radio" name="check" checked> Lựa chọn 2<br>
+        <input type="radio" name="check" checked> Lựa chọn 3<br>
+        <input type="radio" name="check" checked> Lựa chọn 4<br>
+
+        <select multiple style="width: 100%;">
+            <option value="1">Lựa chọn 1</option>
+            <option value="2">Lựa chọn 2</option>
+            <option>Lựa chọn 3</option>
+            <option>Lựa chọn 4</option>
+            <optgroup label="Group option">
+                <option>
+                    <img width="100%" src="img/bg-1.jpg" alt="Đang load ảnh">
+                    Lựa chọn 5
+                </option>
+                <option>Lựa chọn 6</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="file" multiple> Upload4<br>
+        <input type="reset">
+        <input type="submit">
+        <input type="button" value="Button">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Html block -->
+    <p>Đây là đoạn 1 hiển thị block</p>
+    <p>Đây là đoạn 2 hiển thị block</p>
+    <!-- division (gom nhóm nhiều phần tử HTML lại với nhau) -->
+    <div>
+        Đây là nội dung bên trong thẻ div 1
+    </div>
+    <div>
+        Đây là nội dung bên trong thẻ div 2
+    </div>
+    <!-- Html inline -->
+    <span>Đây là đoạn 1 hiển thị inline</span>
+    <span>Đây là đoạn 2 hiển thị inline</span>
+    <!-- iframe -->
+    <br>
+    <iframe width="100%" src="https://vnexpress.net"></iframe>
+
+
+</body>
+<!-- <script src="js/libs/moment.js"></script> -->
+<!-- <script src="/js/customs/quanLyHocVien.js"></script> -->
+
+</html> <!-- kết thúc tài liệu html -->

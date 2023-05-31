@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm học viên</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="overflow-hidden">
+    <!-- 3. Thêm học viên -->
+    <div class="container">
+        <h1 class="heading">Thêm học viên</h1>
+        <hr />
+        <form action="" class="mb-3">
+            <div class="form-group">
+                <label for="" class="form-label fw-bold">Tên học viên</label>
+                <input class="form-control" style="display: block;" type="text" placeholder="Tên học viên">
+                <small class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label fw-bold">Tuổi</label>
+                <input class="form-control" style="display: block;" type="number" placeholder="Tuổi">
+                <small class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label fw-bold">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                <small class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="birthdate" class="form-label fw-bold">Ngày sinh:</label><br>
+                <input type="date" id="birthdate" name="birthdate" class="form-control">
+                <small class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="form-label fw-bold">Giới tính:</label><br>
+                <select name="gender" id="gender" class="form-control">
+                    <option value="">--Chọn giới tính--</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                    <option value="other">Khác</option>
+                </select>
+                <small class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label fw-bold">Địa chỉ học viên</label>
+                <textarea class="form-control" rows="3" style="resize: none;"></textarea>
+                <small class="text-danger"></small>
+            </div>
+        </form>
+        <a class="text-light btn btn-sm btn-secondary" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i> Quay lại
+        </a>
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-plus"></i> Thêm
+        </button>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

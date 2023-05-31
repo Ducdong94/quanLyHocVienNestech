@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm hv</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!-- 2 -->
+
+<body class="container">
+    <h2>===Thêm hv===</h2>
+    <form>
+        <div class="mb-3 form-group">
+            <label for="username">Nhập tên hv</label>
+            <input type="text" id="username" class="form-control" placeholder="vui lòng nhập tên hv">
+            <small class="text-danger" id="username-err"></small>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="telephone">Nhập sđt</label>
+            <input type="text" id="telephone" class="form-control" placeholder="vui lòng nhập sđt hv">
+            <small class="text-danger" id="telephone-err"></small>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="add">Nhập địa chỉ</label><br>
+            <textarea id="add" class="form-control" rows="4" style="resize: none;"></textarea>
+            <small class="text-danger" id="add-err"></small>
+        </div>
+        <button class="btn btn-sm btn-primary" type="submit">Thêm</button>
+        <a class="btn btn-sm btn-secondary" href="./index.html">Hủy</a>
+    </form>
+    <script src="js/_thienForm.js"></script>
+</body>
+
+</html>

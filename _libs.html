@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            background-color: rgb(235, 235, 247);
+            padding: 20px;
+        }
+
+        #echart {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="ad">heading</h1>
+        <h1 class="c">heading</h1>
+
+        <div id="echart" width="" height=""></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.555144948323!2d105.79944381264039!3d21.010462066185486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad6e471e39cd%3A0xdd8d24faae61c66f!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggTmVzdGVjaA!5e0!3m2!1svi!2s!4v1685370588318!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i7WWNyLMsjQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor 4.
+            </textarea>
+        <div id="fb-root"></div>
+        <div class="fb-comments" data-href="http://127.0.0.1:5500/_libs.html" data-width="300" data-numposts="5"></div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout=""
+            data-action="" data-size="" data-share="true"></div>
+    </div>
+
+    <script src="js/libs/jquery-3.7.0.min.js"></script>
+    <script src="js/libs/echarts.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=1467319433289452&autoLogAppEvents=1"
+        nonce="AqJtNrY5"></script>
+    <!-- <script src="js/_libs.js"></script> -->
+    <script>
+        // const $ = document.getElementById.bind(document);
+        // $('ad').innerText = 'adc';
+        $('#ad').text('adc');
+        $('.c').text('adc');
+        // $('ad').innerText = 'adc';
+
+
+    </script>
+</body>
+
+</html>

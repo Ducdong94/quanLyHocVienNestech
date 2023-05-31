@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách học viên</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="overflow-hidden">
+    <!-- Default: trắng -->
+    <!-- primary: xanh -->
+    <!-- secondary: xám -->
+    <!-- success: xanh lá -->
+    <!-- waring: vàng -->
+    <!-- danger: đỏ -->
+    <!-- info: xanh ngọc -->
+    <!-- light: trắng -->
+    <!-- dark: đen -->
+
+    <!-- 1. Danh sách học viên -->
+    <div class="container">
+        <h1 class="heading">Danh sách học viên</h1>
+        <hr />
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="bg-primary text-light">
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Địa chỉ</th>
+                    <th>Điểm TB</th>
+                    <th>Ngày tạo</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <a class="btn btn-sm btn-secondary" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i> Quay lại
+        </a>
+    </div>
+    <script src="js/libs/moment.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/danhSach.js"></script>
+
+</body>
+
+</html>
